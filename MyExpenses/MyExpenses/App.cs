@@ -15,7 +15,7 @@ namespace MyExpenses
         List<string> history;   //История операция, представляют из себя строки (без минуса: пополнение: 300, с минусом: расход: -300);
                                 //Такие строки легко приводить к числу и работать с ним;
         List<string> months;    //Строки с месяцами, название, пополнение, расход;
-        public decimal Balance { get; }
+        decimal balance;
 
         public App() 
         {
@@ -115,6 +115,12 @@ namespace MyExpenses
                 sw.WriteLine(this.history[i]);
 
             sw.Close();
+        }
+
+        public void CheckBalance() // Подсчет текущего баланса
+        {
+            for (int i = 0; i < this.history.Count; i++)
+                balance += Convert.ToDecimal(this.history[i]);     
         }
 
     }

@@ -18,6 +18,17 @@ namespace MyExpenses
             app.GetHistory(textBox1);
             app.GetMonths(textBox1);
             app.AppSave();
+            app.CheckBalance();
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 
