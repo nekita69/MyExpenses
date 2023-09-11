@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nikita\\source\\repos\\MyExpenses\\MyExpenses\\MyExpenses.csproj": {}
+    "C:\\Users\\Nikita\\source\\repos\\MyExpenses\\MyExpenses\\MyExpenses\\MyExpenses.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nikita\\source\\repos\\MyExpenses\\MyExpenses\\MyExpenses.csproj": {
+    "C:\\Users\\Nikita\\source\\repos\\MyExpenses\\MyExpenses\\MyExpenses\\MyExpenses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nikita\\source\\repos\\MyExpenses\\MyExpenses\\MyExpenses.csproj",
+        "projectUniqueName": "C:\\Users\\Nikita\\source\\repos\\MyExpenses\\MyExpenses\\MyExpenses\\MyExpenses.csproj",
         "projectName": "MyExpenses",
-        "projectPath": "C:\\Users\\Nikita\\source\\repos\\MyExpenses\\MyExpenses\\MyExpenses.csproj",
+        "projectPath": "C:\\Users\\Nikita\\source\\repos\\MyExpenses\\MyExpenses\\MyExpenses\\MyExpenses.csproj",
         "packagesPath": "C:\\Users\\Nikita\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nikita\\source\\repos\\MyExpenses\\MyExpenses\\obj\\",
+        "outputPath": "C:\\Users\\Nikita\\source\\repos\\MyExpenses\\MyExpenses\\MyExpenses\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nikita\\AppData\\Roaming\\NuGet\\NuGet.Config",

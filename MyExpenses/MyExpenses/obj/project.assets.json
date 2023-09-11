@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nikita\\source\\repos\\MyExpenses\\MyExpenses\\MyExpenses.csproj",
+      "projectUniqueName": "C:\\Users\\Nikita\\Source\\Repos\\MyExpenses\\MyExpenses\\MyExpenses\\MyExpenses.csproj",
       "projectName": "MyExpenses",
-      "projectPath": "C:\\Users\\Nikita\\source\\repos\\MyExpenses\\MyExpenses\\MyExpenses.csproj",
+      "projectPath": "C:\\Users\\Nikita\\Source\\Repos\\MyExpenses\\MyExpenses\\MyExpenses\\MyExpenses.csproj",
       "packagesPath": "C:\\Users\\Nikita\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nikita\\source\\repos\\MyExpenses\\MyExpenses\\obj\\",
+      "outputPath": "C:\\Users\\Nikita\\Source\\Repos\\MyExpenses\\MyExpenses\\MyExpenses\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nikita\\AppData\\Roaming\\NuGet\\NuGet.Config",
