@@ -10,12 +10,11 @@ namespace MyExpenses
 {
     public class App
     {
-        string lastDate;        //Дата последнего обновления приложения (вход, пополнение, расход и т.д.);
+        public string lastDate { get; }        //Дата последнего обновления приложения (вход, пополнение, расход и т.д.);
         string currDate;        //Текущая дата;
         List<string> history;   //История операция, представляют из себя строки (без минуса: пополнение: 300, с минусом: расход: -300);
                                 //Такие строки легко приводить к числу и работать с ним;
         List<string> months;    //Строки с месяцами, название, пополнение, расход;
-        public decimal Balance { get; }
 
         public App() 
         {
@@ -78,27 +77,33 @@ namespace MyExpenses
 
         public void GetHistory(TextBox t) //Метод для получения истории; В переданный textBox все выведет;
         {
-            t.Text += this.lastDate + "\r\n";
-            t.Text += "История: " + "\r\n";
+            string rez = "История:\r\n";
             for (int i = 0; i < this.history.Count; i++)
-                t.Text += history[i] + "\r\n";
-            t.Text += "\r\n";
+                rez += this.history[i].ToString() + "\r\n";
+            t.Text += rez;
+            t.AppendText(" ");
         }
 
         public void GetMonths(TextBox t) //Метод для получения истории по месяцам; В переданный textBox все выведет;
         {
-            t.Text += "История по месяцам: " + "\r\n";
+            string rez = "История по месяцам:\r\n";
             for (int i = 0; i < this.months.Count; i++)
-                t.Text += months[i] + "\r\n";
-            t.Text += "\r\n";
+                rez += this.months[i].ToString() + "\r\n";
+            t.Text += rez;
+            t.AppendText(" ");
         }
 
-        public void AddHis(decimal sum) //Метод для добавления операции в историю
+        public bool AddHis(decimal sum) //Метод для добавления операции в историю
         {
             //Тип decimal - с ним удобно работать когда речь идет о деньгах, если я конечно не ошибаюсь ;D
             // Для пополнения - передавать число без знака, пример: 3000.00
             // Для расхода - с минусом: -200.50
-            this.history.Add(Convert.ToString(sum));
+            if(CheckBalance() + sum >= 0)
+            {
+                this.history.Add(Convert.ToString(sum));
+                return true;
+            }
+            return false;
         }
 
         public void AppSave() //Сохранение всей информации из полей класса в файл;
@@ -115,6 +120,19 @@ namespace MyExpenses
                 sw.WriteLine(this.history[i]);
 
             sw.Close();
+        }
+
+        public decimal CheckBalance() // Подсчет текущего баланса
+        {
+            if(this.history.Count != 0)
+            {
+                decimal balance = 0;
+                for (int i = 0; i < this.history.Count; i++)
+                    if (int.TryParse(this.history[i], out _)) // Проверка на то, что именно число;
+                        balance += Convert.ToDecimal(this.history[i]);
+                return balance;
+            }  
+            return 0;
         }
 
     }
