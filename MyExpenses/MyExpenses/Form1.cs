@@ -63,6 +63,7 @@ namespace MyExpenses
             }
             else MessageBox.Show("Не является числом");
         }
+
     }
 
 }

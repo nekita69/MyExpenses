@@ -33,7 +33,6 @@
             button1 = new Button();
             button2 = new Button();
             label1 = new Label();
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             label2 = new Label();
             SuspendLayout();
             // 
@@ -143,7 +142,6 @@
         private Button button1;
         private Button button2;
         private Label label1;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Label label2;
     }
 }
