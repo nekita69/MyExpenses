@@ -15,6 +15,10 @@ namespace MyExpenses
         List<string> history;   //История операция, представляют из себя строки (без минуса: пополнение: 300, с минусом: расход: -300);
                                 //Такие строки легко приводить к числу и работать с ним;
         List<string> months;    //Строки с месяцами, название, пополнение, расход;
+       
+        List<int> monthsMon;    // Номер месяца (1,2,3...);
+        List<decimal> monthsInc;    // Доходы;
+        List<decimal> monthsXp;     // Расходы;
 
         public App() 
         {
@@ -53,6 +57,7 @@ namespace MyExpenses
 
                 this.history = new List<string>();
                 this.months = new List<string>();
+
                 this.lastDate = allstr[0].Split(":")[1].Trim();
                 this.currDate = date[0];
 
@@ -67,12 +72,31 @@ namespace MyExpenses
                     {
                         for (int i = indexs[0] + 1; i < indexs[1]; i++)
                             this.months.Add(allstr[i]);
-                        
+                                
                         for (int i = indexs[1] + 1; i < allstr.Count() ; i++)
                             this.history.Add(allstr[i]);
+
+                        SplitForMonth();
                     }
                 }
             }
+        }
+
+        public void SplitForMonth() // Вот метод который делит;
+        {
+            this.monthsMon = new List<int>();
+            this.monthsInc = new List<decimal>();
+            this.monthsXp = new List<decimal>();
+
+            for (int i = 0; i < this.months.Count; i++)
+                if (this.months[i] != "" && this.months[i] != " ")
+                {
+                    string[] temp = this.months[i].Split(":");
+                    this.monthsMon.Add(Convert.ToInt32(temp[0]));
+                    string[] summs = temp[1].Split(";");
+                    this.monthsInc.Add(Convert.ToDecimal(summs[0]));
+                    this.monthsXp.Add(Convert.ToDecimal(summs[1]));
+                }
         }
 
         public void GetHistory(TextBox t) //Метод для получения истории; В переданный textBox все выведет;
