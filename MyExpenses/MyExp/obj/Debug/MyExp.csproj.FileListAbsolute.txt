@@ -8,3 +8,14 @@ D:\Apps\projects\MyExpenses\MyExpenses\MyExp\bin\Debug\MyExp.exe
 D:\Apps\projects\MyExpenses\MyExpenses\MyExp\bin\Debug\MyExp.pdb
 D:\Apps\projects\MyExpenses\MyExpenses\MyExp\obj\Debug\MyExp.exe
 D:\Apps\projects\MyExpenses\MyExpenses\MyExp\obj\Debug\MyExp.pdb
+C:\Users\nvhom\Desktop\proj\MyExpenses\MyExpenses\MyExp\bin\Debug\MyExp.exe.config
+C:\Users\nvhom\Desktop\proj\MyExpenses\MyExpenses\MyExp\bin\Debug\MyExp.exe
+C:\Users\nvhom\Desktop\proj\MyExpenses\MyExpenses\MyExp\bin\Debug\MyExp.pdb
+C:\Users\nvhom\Desktop\proj\MyExpenses\MyExpenses\MyExp\obj\Debug\MyExp.csproj.AssemblyReference.cache
+C:\Users\nvhom\Desktop\proj\MyExpenses\MyExpenses\MyExp\obj\Debug\MyExp.csproj.SuggestedBindingRedirects.cache
+C:\Users\nvhom\Desktop\proj\MyExpenses\MyExpenses\MyExp\obj\Debug\MyExp.Form1.resources
+C:\Users\nvhom\Desktop\proj\MyExpenses\MyExpenses\MyExp\obj\Debug\MyExp.Properties.Resources.resources
+C:\Users\nvhom\Desktop\proj\MyExpenses\MyExpenses\MyExp\obj\Debug\MyExp.csproj.GenerateResource.cache
+C:\Users\nvhom\Desktop\proj\MyExpenses\MyExpenses\MyExp\obj\Debug\MyExp.csproj.CoreCompileInputs.cache
+C:\Users\nvhom\Desktop\proj\MyExpenses\MyExpenses\MyExp\obj\Debug\MyExp.exe
+C:\Users\nvhom\Desktop\proj\MyExpenses\MyExpenses\MyExp\obj\Debug\MyExp.pdb

@@ -12,7 +12,7 @@ namespace MyExp
 {
     public class App
     {
-        public string lastDate { get; } //Дата последнего обновления приложения (вход, пополнение, расход и т.д.);
+        public string lastDate { get; private set; } //Дата последнего обновления приложения (вход, пополнение, расход и т.д.);
         string currDate;        //Текущая дата;
         List<string> history;   //История операция, представляют из себя строки (без минуса: пополнение: 300, с минусом: расход: -300);
                                 //Такие строки легко приводить к числу и работать с ним;
@@ -62,6 +62,7 @@ namespace MyExp
 
                 this.lastDate = allstr[0].Split(':')[1].Trim();
                 this.currDate = date[0];
+               
 
                 if (allstr.Count > 3) //Если есть история какая-то;
                 {
@@ -79,6 +80,28 @@ namespace MyExp
                             this.history.Add(allstr[i]);
 
                         SplitForMonth();
+                    }
+                    //MessageBox.Show(Convert.ToString(this.history.Count()));
+                    string ml = lastDate.Split('.')[1];
+                    string mc = currDate.Split('.')[1];
+                    if(ml != mc)
+                    {
+                        int mll = Convert.ToInt32(ml);
+                        decimal ti = 0;
+                        decimal tx = 0;
+                        for(int i = 0; i < this.history.Count(); i++)
+                        {
+                            
+                            decimal temp = Convert.ToDecimal(history[i]);
+                            if (temp < 0)
+                                tx += temp;
+                            else
+                                ti += temp;
+                            
+                            this.history = new List<string>();
+                            this.history.Add(Convert.ToString(ti + tx));
+                            this.months.Add(mll + ":" + ti + "; " + tx);
+                        }
                     }
                 }
             }
@@ -183,6 +206,7 @@ namespace MyExp
             }  
             return 0;
         }
+
 
     }
 }
