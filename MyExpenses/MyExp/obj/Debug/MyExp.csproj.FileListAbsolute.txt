@@ -1,0 +1,10 @@
+D:\Apps\projects\MyExpenses\MyExpenses\MyExp\obj\Debug\MyExp.csproj.AssemblyReference.cache
+D:\Apps\projects\MyExpenses\MyExpenses\MyExp\obj\Debug\MyExp.Form1.resources
+D:\Apps\projects\MyExpenses\MyExpenses\MyExp\obj\Debug\MyExp.Properties.Resources.resources
+D:\Apps\projects\MyExpenses\MyExpenses\MyExp\obj\Debug\MyExp.csproj.GenerateResource.cache
+D:\Apps\projects\MyExpenses\MyExpenses\MyExp\obj\Debug\MyExp.csproj.CoreCompileInputs.cache
+D:\Apps\projects\MyExpenses\MyExpenses\MyExp\bin\Debug\MyExp.exe.config
+D:\Apps\projects\MyExpenses\MyExpenses\MyExp\bin\Debug\MyExp.exe
+D:\Apps\projects\MyExpenses\MyExpenses\MyExp\bin\Debug\MyExp.pdb
+D:\Apps\projects\MyExpenses\MyExpenses\MyExp\obj\Debug\MyExp.exe
+D:\Apps\projects\MyExpenses\MyExpenses\MyExp\obj\Debug\MyExp.pdb
