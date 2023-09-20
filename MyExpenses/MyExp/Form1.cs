@@ -124,7 +124,7 @@ namespace MyExp
 
                 label2.Text = "Баланс: " + app.CheckBalance() + " RUB\r\n";
             }
-            else MessageBox.Show("Не является числом");
+            else MessageBox.Show("Не является числом  ");
         }
 
         private void button3_Click(object sender, EventArgs e)
