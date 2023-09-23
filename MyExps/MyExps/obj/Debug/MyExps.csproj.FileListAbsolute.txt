@@ -1,0 +1,13 @@
+C:\Users\Nikita\Desktop\MyExps\MyExps\obj\Debug\MyExps.csproj.AssemblyReference.cache
+C:\Users\Nikita\Desktop\MyExps\MyExps\obj\Debug\MyExps.Form1.resources
+C:\Users\Nikita\Desktop\MyExps\MyExps\obj\Debug\MyExps.Properties.Resources.resources
+C:\Users\Nikita\Desktop\MyExps\MyExps\obj\Debug\MyExps.csproj.GenerateResource.cache
+C:\Users\Nikita\Desktop\MyExps\MyExps\obj\Debug\MyExps.csproj.CoreCompileInputs.cache
+C:\Users\Nikita\Desktop\MyExps\MyExps\bin\Debug\MyExps.exe.config
+C:\Users\Nikita\Desktop\MyExps\MyExps\bin\Debug\MyExps.exe
+C:\Users\Nikita\Desktop\MyExps\MyExps\bin\Debug\MyExps.pdb
+C:\Users\Nikita\Desktop\MyExps\MyExps\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nikita\Desktop\MyExps\MyExps\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nikita\Desktop\MyExps\MyExps\obj\Debug\MyExps.csproj.CopyComplete
+C:\Users\Nikita\Desktop\MyExps\MyExps\obj\Debug\MyExps.exe
+C:\Users\Nikita\Desktop\MyExps\MyExps\obj\Debug\MyExps.pdb
