@@ -10,7 +10,7 @@ namespace MyExps
 {
     internal class FileStorage
     {
-        UsersApp usersApp; //Все пользователи приложения;
+        public UsersApp usersApp; //Все пользователи приложения;
 
         public FileStorage() //При инициализации считываем всех пользователей файла;
         {

@@ -11,3 +11,16 @@ C:\Users\Nikita\Desktop\MyExps\MyExps\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Nikita\Desktop\MyExps\MyExps\obj\Debug\MyExps.csproj.CopyComplete
 C:\Users\Nikita\Desktop\MyExps\MyExps\obj\Debug\MyExps.exe
 C:\Users\Nikita\Desktop\MyExps\MyExps\obj\Debug\MyExps.pdb
+D:\Apps\projects\MyExpenses\MyExps\MyExps\bin\Debug\MyExps.exe.config
+D:\Apps\projects\MyExpenses\MyExps\MyExps\bin\Debug\MyExps.exe
+D:\Apps\projects\MyExpenses\MyExps\MyExps\bin\Debug\MyExps.pdb
+D:\Apps\projects\MyExpenses\MyExps\MyExps\bin\Debug\Newtonsoft.Json.dll
+D:\Apps\projects\MyExpenses\MyExps\MyExps\bin\Debug\Newtonsoft.Json.xml
+D:\Apps\projects\MyExpenses\MyExps\MyExps\obj\Debug\MyExps.csproj.AssemblyReference.cache
+D:\Apps\projects\MyExpenses\MyExps\MyExps\obj\Debug\MyExps.Form1.resources
+D:\Apps\projects\MyExpenses\MyExps\MyExps\obj\Debug\MyExps.Properties.Resources.resources
+D:\Apps\projects\MyExpenses\MyExps\MyExps\obj\Debug\MyExps.csproj.GenerateResource.cache
+D:\Apps\projects\MyExpenses\MyExps\MyExps\obj\Debug\MyExps.csproj.CoreCompileInputs.cache
+D:\Apps\projects\MyExpenses\MyExps\MyExps\obj\Debug\MyExps.csproj.CopyComplete
+D:\Apps\projects\MyExpenses\MyExps\MyExps\obj\Debug\MyExps.exe
+D:\Apps\projects\MyExpenses\MyExps\MyExps\obj\Debug\MyExps.pdb

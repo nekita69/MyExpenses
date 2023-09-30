@@ -22,11 +22,9 @@ namespace MyExps
         private void Form1_Load(object sender, EventArgs e)
         {
             FileStorage fs = new FileStorage();
-            User u = fs.FindFile("Alex", "12345");
-            if (u == null)
-                MessageBox.Show("Не найден");
 
-            fs.SaveFile();
+            
+            
         }
     }
 }

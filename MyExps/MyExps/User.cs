@@ -11,10 +11,13 @@ namespace MyExps
     {
         public string login = "";
         public string password = "";
-        public List<string> history { get; set; } //История за месяц;
+        public List<string> history; //История за месяц;
         public List<string> monhist { get; set; } //История за год;
 
-        public User() { } //Конструктор по умолчанию, нужен для десерилизации;
+        public User() {
+            history = new List<string>();
+            monhist = new List<string>();
+        } //Конструктор по умолчанию, нужен для десерилизации;
 
         public User(string log, string psss)
         {

@@ -18,11 +18,12 @@ namespace MyExps
 
         public User Find(string login,  string password) //Поиск в хранилище;
         {
-            return file.FindFile(login, password);
+            return file.FindFile(login, password); //User or null;
         }
 
+        public bool Add(User user) { return file.AddFile(user); }
+        public bool Change(User user) { return file.ChangeFile(user); }
+        public void Save() { file.SaveFile(); }
 
-        //
-        // Да
     }
 }
