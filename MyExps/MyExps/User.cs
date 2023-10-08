@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MyExps
 {
-    internal class User //Класс пользователя;
+    public  class User //Класс пользователя;
     {
         public string login = "";
         public string password = "";
@@ -38,7 +38,7 @@ namespace MyExps
         public User FindUser(string log, string pass) //Поиск пользователя;
         {
             for(int i = 0; i < users.Count; i++)
-                if (users[i].login == log && users[i].password == pass)
+                if (users[i].login.ToLower() == log.ToLower() && users[i].password == pass)
                     return users[i];
             return null;
         }

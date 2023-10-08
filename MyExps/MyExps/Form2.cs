@@ -16,10 +16,37 @@ namespace MyExps
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
+=======
+        // All Objects;
+        Form1 form1;
+        public User user;
+        public Storage st;
+        Bank bank;
+
+        public void SendDataForm2(User user, Form1 f1, Storage st)
+        {
+            form1 = f1;
+            this.user = user;
+            this.st = st;
+            bank = new Bank(user);
+            MessageBox.Show(user.login);
+        }
+>>>>>>> nikita
 
         private void Form2_Load(object sender, EventArgs e)
         {
 
         }
+<<<<<<< HEAD
+=======
+
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            st.Change(user);
+            st.Save();
+            Application.Exit();
+        }
+>>>>>>> nikita
     }
 }

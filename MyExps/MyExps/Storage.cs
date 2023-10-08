@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MyExps
 {
-    internal class Storage
+    public  class Storage
     {
         FileStorage file;
 
@@ -21,9 +21,9 @@ namespace MyExps
             return file.FindFile(login, password); //User or null;
         }
 
-        public bool Add(User user) { return file.AddFile(user); }
-        public bool Change(User user) { return file.ChangeFile(user); }
-        public void Save() { file.SaveFile(); }
+        public bool Add(User user) { return file.AddFile(user); } //true/false;
+        public bool Change(User user) { return file.ChangeFile(user); } //true/false;
+        public void Save() { file.SaveFile(); } //void;
 
     }
 }

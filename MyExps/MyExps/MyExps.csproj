@@ -51,9 +51,13 @@
   <ItemGroup>
 <<<<<<< HEAD
     <Compile Include="Access.cs" />
+<<<<<<< HEAD
 =======
     <Compile Include="App.cs" />
 >>>>>>> f5b10fb60a8ae6edc4debd44962cbc1cee417456
+=======
+    <Compile Include="Bank.cs" />
+>>>>>>> nikita
     <Compile Include="FileStorage.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

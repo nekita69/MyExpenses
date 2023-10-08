@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -104,10 +105,15 @@
             this.button4.Text = "year";
             this.button4.UseVisualStyleBackColor = true;
             // 
+=======
+            this.SuspendLayout();
+            // 
+>>>>>>> nikita
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -121,10 +127,22 @@
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+=======
+            this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.MaximumSize = new System.Drawing.Size(1200, 700);
+            this.MinimumSize = new System.Drawing.Size(1200, 700);
+            this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Form2";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
+            this.Load += new System.EventHandler(this.Form2_Load);
+            this.ResumeLayout(false);
+>>>>>>> nikita
 
         }
 
         #endregion
+<<<<<<< HEAD
 
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
@@ -133,5 +151,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+=======
+>>>>>>> nikita
     }
 }

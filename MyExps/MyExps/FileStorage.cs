@@ -62,7 +62,6 @@ namespace MyExps
         {
             string js = JsonConvert.SerializeObject(usersApp);
             File.WriteAllText("users.json", js);
-            usersApp = null;
         }
     }
 }
