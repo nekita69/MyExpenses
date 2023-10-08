@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Security;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,32 +9,29 @@ namespace MyExps
 {
     internal class Access
     {
-        public bool acc; // будет отвечать за доступ пользователю (вошел/невошел)
+        public bool acc; // будет отвечать за доступ пользователю;
         public Storage stor;
-        public Access()
+        public Access(Storage stor)
         {
             acc = false;
-            stor = new Storage();
+            this.stor = stor;
+            //stor = new Storage();
         }
 
-        public void Registration(string log, string pass) // регистрация
+        public bool Registration(User us) //true - прошло, false - не;
         {  
-            if(stor.Find(log, pass) == null) // поиск подобных пользователей
+            if(stor.Add(us)) 
             {
-                acc = true;
-                User user = new User(log, pass);
-                stor.Add(user);
                 stor.Save();
+                return true;
             }
+            return false;
         }
-        public void LogIn(string log, string pass) // авторизация
+        public User LogIn(string log, string pass) //User - авторизовался, null - нет;
         {
-            if (stor.Find(log, pass) != null)
-            {
-                acc = true;
-            }
+            return stor.Find(log, pass);            
         }
-        public void Exit() => acc = false; // выход из акка
+        //public void Exit() => acc = false; // выход из акка
   
     }
 }
