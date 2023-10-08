@@ -14,6 +14,7 @@ namespace MyExps
 {
     public partial class Form1 : Form
     {
+        App app;
         public Form1()
         {
             InitializeComponent();
@@ -21,10 +22,23 @@ namespace MyExps
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            FileStorage fs = new FileStorage();
+            app = new App();
 
-            
-            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            label1.Text = "Reg";
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            label1.Text = "Log";
         }
     }
 }
