@@ -14,6 +14,7 @@ namespace MyExps
 {
     public partial class Form1 : Form
     {
+        App app;
         public Form1()
         {
             InitializeComponent();
@@ -22,6 +23,7 @@ namespace MyExps
 
         private void Form1_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             FileStorage fs = new FileStorage();
             Storage st = new Storage();
             User user = new User("Pidrosovich","AdolfHitler");
@@ -53,6 +55,25 @@ namespace MyExps
                 MessageBox.Show("Вы авторизованы");
 
             }
+=======
+            app = new App();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            label1.Text = "Reg";
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            label1.Text = "Log";
+>>>>>>> f5b10fb60a8ae6edc4debd44962cbc1cee417456
         }
     }
 }
